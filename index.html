@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout-page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+        <div class="nav-section">
+            <div class="nav-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo-text">SHOP</div>
+            <div class="cart-logo">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </nav>
+    <main>
+      <header>
+        <p>Checkout</p>
+        <span>Shop is a demo app - form data will not be sent
+        </span>
+      </header>
+      <section class="Information-section">
+        <section class="left-section">
+          <div class="info-page">
+            <h2>Account Information</h2>
+            <div class="input-data">
+              <input type="email" id="userEmailAdress" class="input-value" placeholder="" required />
+              <label class="label-value" for="userEmailAdress">Email</label>
+              <div class="underline-effect"></div>
+            </div>
+            <div class="input-data">
+              <input type="tel" id="phoneNo" class="input-value" placeholder="" required />
+              <label class="label-value" for="phoneNo">Phone Number</label>
+              <div class="underline-effect"></div>
+            </div>
+          </div>
+          <div class="info-page">
+            <h2>Shipping Address</h2>
+            <div class="input-data">
+              <input type="text" id="userAddress" required   class="input-value" placeholder=" "/>
+              <label class="label-value" for="userAddress">Address</label>
+              <div class="underline-effect"></div>
+            </div>
+            <div class="input-data">
+              <input type="text" id="userCity" required   class="input-value" placeholder=" "/>
+              <label class="label-value" for="userCity">City</label>
+              <div class="underline-effect"></div>
+            </div>
+            <div class="shipping-code-info">
+              <div class="input-data">
+                <input type="text" id="userState" required   class="input-value" placeholder=" " />
+                <label class="label-value" for="userState">State/Province</label>
+                <div class="underline-effect"></div>
+              </div>
+              <div class="input-data">
+                <input type="text" id="userCode" required  class="input-value" placeholder=" " />
+                <label class="label-value" for="userCode">Zip/Postal Code</label>
+                <div class="underline-effect"></div>
+              </div>
+          </div>
+          <div class="country-selection-info">
+            <p>Country</p>
+            <select class="select-country">
+              <option>United States</option>
+              <option>India</option>
+              <option>Mexico</option>
+            </select>
+            <div class="underline-effect"></div>
+          </div>
+          </div>
+          
+          <div class="info-page">
+            <h2>Billing Address</h2>
+            <div class="billig-tick">
+              <input class="tick-box" type="checkbox" id="checkItem" />
+              <label for="checkItem">Use different billing address</label>
+              <div class="info-page change-address">
+                <div class="input-data">
+                  <input type="text" id="userAddress" required   class="input-value" placeholder=" "/>
+                  <label class="label-value" for="userAddress">Address</label>
+                  <div class="underline-effect"></div>
+                </div>
+                <div class="input-data">
+                  <input type="text" id="userCity" required   class="input-value" placeholder=" "/>
+                  <label class="label-value" for="userCity">City</label>
+                  <div class="underline-effect"></div>
+                </div>
+                <div class="shipping-code-info">
+                  <div class="input-data">
+                    <input type="text" id="userState" required   class="input-value" placeholder=" " />
+                    <label class="label-value" for="userState">State/Province</label>
+                    <div class="underline-effect"></div>
+                  </div>
+                  <div class="input-data">
+                    <input type="text" id="userCode" required  class="input-value" placeholder=" " />
+                    <label class="label-value" for="userCode">Zip/Postal Code</label>
+                    <div class="underline-effect"></div>
+                  </div>
+              </div>
+              <div class="country-selection-info">
+                <p>Country</p>
+                <select class="select-country">
+                  <option>United States</option>
+                  <option>India</option>
+                  <option>Mexico</option>
+                </select>
+                <div class="underline-effect"></div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="right-section">
+          <div class="info-page payment-info">
+            <h2>Payment Method</h2>
+            <div class="input-data">
+              <input type="email" id="cardholder-name" required  class="input-value" placeholder="" />
+            <label class="label-value" for="cardholder-name">Cardholder Name</label>
+            <div class="underline-effect"></div>
+            </div>
+            <div class="input-data">
+              <input type="text" id="userCard-No" required   class="input-value" placeholder=" " />
+            <label class="label-value" for="userCard-no">Card Number</label>
+            <div class="underline-effect"></div>
+            </div>
+            <div class="input-data card-information">
+              <p>Expiry</p>
+              <div class="card-details">
+                <div class="month-data">
+                  <select id="pick-month">
+                    <option value="1">Jan</option>
+                    <option value="2">Feb</option>
+                    <option value="3">Mar</option>
+                    <option value="4">Apr</option>
+                    <option value="5">May</option>
+                    <option value="6">Jun</option>
+                    <option value="7">Jul</option>
+                    <option value="8">Aug</option>
+                    <option value="9">Sep</option>
+                    <option value="10">Oct</option>
+                    <option value="11">Nov</option>
+                    <option value="12">Dec</option>
+                  </select>
+                </div>
+                <div class="year-data">
+                  <select id="pick-year">
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2023">2024</option>
+                    <option value="2023">2025</option>
+                    <option value="2023">2026</option>
+                    <option value="2023">2027</option>
+                  </select>
+                </div>
+                <div class="input-data cvv-data">
+                  <input type="text" id="userCard-cvv" required  class="input-value" placeholder=" " />
+                  <label class="label-value" for="userCard-cvv">CVV</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-page">
+            <h2>Order Summary</h2>
+            <div class="items-ordered">
+              <p>Inbox - Subtle Actions T-Shirt</p>
+              <p>$15</p>
+            </div>
+            <div class="total-price">
+              <p>Total</p>
+              <p>$17.05</p>
+            </div>
+          </div>
+          <div class="btn">
+            <button class="btn-place-order">PLACE ORDER</button>
+          </div>
+        </section>
+      </section>
+      
+      
+
+      
+    </main>
+    <script src="https://kit.fontawesome.com/d7de581256.js" crossorigin="anonymous"></script>
+  </body>
+</html>

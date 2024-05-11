@@ -1,0 +1,219 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-color:#424242;
+  --secondary-color:#757575;
+}
+body{
+  font-family: 'Roboto', 'Noto', sans-serif;
+  line-height:1.5;
+  width: 100%;
+}
+html{
+  font-size: 15px;
+}
+.nav-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0rem 1rem;
+  padding:2rem 0rem ;
+}
+.logo-text{
+ font-size: larger;
+ color:var(--primary-color);
+ font-weight: bold;
+}
+.fa-bars{
+  font-size:1.5rem;
+}
+.fa-cart-shopping{
+    font-size: 1.5rem;
+}
+h2{
+  font-size: 1rem;
+  font-weight: bold;
+  color:var(--primary-color);
+}
+header{
+  text-align: center;
+  p{
+      padding-bottom:0.5rem;
+      color: var(--primary-color);
+      font-size:1.1rem;
+      
+  }
+}
+header > span{
+  color: var(--secondary-color);
+}
+
+.Information-section {
+  padding: 1rem 3rem 4rem 3rem;
+  /* margin:0rem 6rem ; */
+ } 
+.info-page{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap:2rem;
+  margin-bottom:3rem;
+}
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--primary-color);
+  font-size: 1.2rem;
+  background-color: white;
+}
+.input-data{
+  position: relative; 
+  display: flex;
+  gap:rem;
+  margin-top: 1.5rem;
+}
+.input-data .input-value{
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+  font-size:1rem;
+  outline: none;
+  /* line-height:2; */
+ 
+}
+.input-data .label-value{
+  position:absolute;
+  font-size:1.1rem;
+  bottom:0.1rem;
+  left:0;
+  pointer-events: none; 
+  transition: all 0.3s ease;
+  color:#9b9b9b
+}
+.input-data .input-value:focus ~ label , .input-data .input-value:valid ~ label{
+ transform: translateY(-1.5rem);
+ font-size:0.9rem;
+}
+.shipping-code-info{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:1rem;
+}
+.country-selection-info{
+  display: flex;
+  flex-direction: column;
+  gap:0.8rem;
+
+  & .select-country{
+    border: none;
+      border-bottom: 2px solid var(--primary-color);
+      outline: none;
+      background-color: white;
+      font-size: 1rem;
+      /* margin-bottom: 2rem; */
+  }
+}
+.tick-box{
+  width: auto;
+}
+.change-address{
+   display: none;
+}
+#checkItem:checked + label +  .change-address {
+  display: block;
+}
+.cvv-data{
+  margin-top: -1rem;
+}
+.card-information{
+  display: flex;
+  flex-direction: column;
+  gap:0.4rem
+}
+.card-details{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);  
+  gap:1rem;
+}
+#pick-month,#pick-year,#ccv-data{
+    border: none;
+    width: 100%;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size: 1rem;
+    background-color: white;
+}
+.items-ordered{
+  display: flex;
+  justify-content: space-between;
+}
+.total-price{
+  display: flex;
+  justify-content: space-between;
+}
+.tick-box {
+  width: 1rem;
+  height: 1rem;
+  border: 4px solid black; 
+  border-radius: 3px; 
+  outline: none;
+  margin-right:1rem;
+}
+.input-data .underline-effect{
+    width: 100%;
+    /* height: 2px; */
+    position:absolute;
+    border-top:2px solid blue;
+    transform: scaleX(0);
+    transition:transform 0.3s ease;
+    margin-top: 1.2rem;
+}
+.input-data .input-value:focus ~ .underline-effect{
+     transform: scaleX(1);
+}
+
+.input-data select:focus ~ .underline {
+  transform: scaleX(1);
+} 
+@media (width>780px) {
+  .fa-bars{
+    display: none;
+    visibility: hidden;
+  }
+  .Information-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:4rem;
+  }
+  .payment-info{
+    margin:1rem 0rem 1.7rem auto;
+  }
+  .right-section{
+    margin-left: 2.4rem;
+  }
+  .btn-place-order{
+      background-color:white;
+      padding:0.5rem 1.5rem;
+      
+  }
+}
+@media (width<780px) {
+  .btn-place-order{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #172c50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.1rem;
+  }
+}
